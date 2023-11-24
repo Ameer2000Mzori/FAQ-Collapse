@@ -88,7 +88,8 @@ body {
 
   .header .collapse-Wrapper .collap-Wrap h3 {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 13px;
+    padding: 0;
   }
 
   .header .collapse-Wrapper .collap-Wrap p {
