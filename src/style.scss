@@ -5,3 +5,74 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: aliceblue;
+
+  .collapse-Wrapper {
+    width: 500px;
+    padding: 5px;
+    height: clamp(100px, 100%, 1000px);
+
+    .collap-Wrap {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      align-items: start;
+      background-color: rgba(255, 255, 255, 0.685);
+      border-radius: 15px;
+      margin: 15px;
+      height: 50px;
+      padding: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      overflow: hidden;
+      filter: drop-shadow(0 0 0.25rem rgb(165, 165, 165));
+      border-style: solid;
+      border-color: rgb(146, 146, 146);
+      border-width: 1px;
+
+      .title-Btn-Wrap {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+
+        button {
+          border-radius: 100%;
+          background-color: rgb(134, 132, 132);
+          border-style: none;
+          height: 25px;
+          width: 25px;
+          cursor: pointer;
+
+          i {
+            color: white;
+          }
+        }
+      }
+
+      p {
+        width: 100%;
+      }
+    }
+
+    .collap-Wrap:hover {
+      background-color: aliceblue;
+      height: 120px;
+    }
+
+    // .collap-Wrap.active {
+    //   height: 50px;
+    // }
+  }
+}

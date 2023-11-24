@@ -5,3 +5,70 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.header .collapse-Wrapper {
+  width: 500px;
+  padding: 5px;
+  height: clamp(100px, 100%, 1000px);
+}
+
+.header .collapse-Wrapper .collap-Wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: start;
+  background-color: rgba(255, 255, 255, 0.685);
+  border-radius: 15px;
+  margin: 15px;
+  height: 50px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: hidden;
+  filter: drop-shadow(0 0 0.25rem rgb(165, 165, 165));
+  border-style: solid;
+  border-color: rgb(146, 146, 146);
+  border-width: 1px;
+}
+
+.header .collapse-Wrapper .collap-Wrap .title-Btn-Wrap {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.header .collapse-Wrapper .collap-Wrap .title-Btn-Wrap button {
+  border-radius: 100%;
+  background-color: rgb(134, 132, 132);
+  border-style: none;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.header .collapse-Wrapper .collap-Wrap .title-Btn-Wrap button i {
+  color: white;
+}
+
+.header .collapse-Wrapper .collap-Wrap p {
+  width: 100%;
+}
+
+.header .collapse-Wrapper .collap-Wrap:hover {
+  background-color: aliceblue;
+  height: 120px;
+}
