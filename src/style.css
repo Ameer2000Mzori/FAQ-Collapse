@@ -15,6 +15,7 @@ body {
   text-align: center;
   align-items: center;
   background-color: aliceblue;
+  overflow-x: hidden;
 }
 
 .header .collapse-Wrapper {
@@ -68,7 +69,34 @@ body {
   width: 100%;
 }
 
-.header .collapse-Wrapper .collap-Wrap:hover {
+.header .collapse-Wrapper .collap-Wrap.active {
   background-color: aliceblue;
   height: 120px;
+}
+
+@media screen and (max-width: 769px) {
+  .header .collapse-Wrapper {
+    width: 330px;
+    padding: 5px;
+    height: clamp(100px, 100%, 1000px);
+  }
+
+  .header .collapse-Wrapper .collap-Wrap {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .header .collapse-Wrapper .collap-Wrap h3 {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .header .collapse-Wrapper .collap-Wrap p {
+    font-size: 15px;
+  }
+
+  .header .collapse-Wrapper .collap-Wrap.active {
+    background-color: aliceblue;
+    height: 100px;
+  }
 }
